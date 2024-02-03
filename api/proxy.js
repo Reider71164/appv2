@@ -1,7 +1,7 @@
 const { createProxyMiddleware } = require("http-proxy-middleware");
 
 module.exports = (req, res) => {
-  let target = "https://spotify.com"; // Default target
+  let target = "https://open.spotify.com"; // Default target
 
   if (
     req.url.startsWith("/api") ||
