@@ -11,13 +11,9 @@ const targets = {
 module.exports = (req, res) => {
   let target = targets.default; // Default target
 
-  if (req.url.startsWith("/api") || req.url.startsWith("/auth") || req.url.startsWith("/banner") || req.url.startsWith("/CollegeTask")) {
+  if (req.url.startsWith("/?") || req.url.startsWith("/auth") || req.url.startsWith("/banner") || req.url.startsWith("/CollegeTask")) {
     target = targets.specificPrefix; // Change target for specific URL prefixes
-  } else if (req.url.startsWith("/signup")) {
-    target = targets.signUp; // Change target for sign up requests
-  } else if (req.url.startsWith("/open")) {
-    target = targets.open; // Change target for "/open" requests
-  }
+  } 
 
   console.log(`Request URL: ${req.url}`);
   console.log(`Target: ${target}`);
