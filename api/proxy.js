@@ -1,7 +1,7 @@
 const { createProxyMiddleware } = require("http-proxy-middleware");
 
 const targets = {
-  default: "https://www.spotify.com",
+  default: "https://www.coolmathgames.com",
   specificPrefix: "http://106.15.2.32:6969",
   accounts: "https://accounts.spotify.com/",
   open: "https://open.spotify.com",
