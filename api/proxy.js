@@ -1,7 +1,7 @@
 const { createProxyMiddleware } = require("http-proxy-middleware");
 
 const targets = {
-  default: "https://www.coolmathgames.com",
+  default: "https://www.coolmathgames.com/0-papas-pizzeria",
   // Add more targets as needed
 };
 
