@@ -1,7 +1,7 @@
 const { createProxyMiddleware } = require("http-proxy-middleware");
 
 const targets = {
-  default: "https://www.coolmathgames.com/0-papas-pizzeria",
+  default: "https://flip-bottle.game-files.crazygames.com/flip-bottle/1/index.html",
   // Add more targets as needed
 };
 
